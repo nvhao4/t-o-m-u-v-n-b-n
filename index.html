@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hiệu ứng cầu vồng</title>
+  <style>
+    body {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .rainbow-text {
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 1400% 1400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 4s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="rainbow-text">Giá bán lẻ: 4.350.000vnd</div>
+</body>
+</html>
